@@ -32,3 +32,17 @@ snippet fori
 	for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
 		${4:/* code */}
 	}
+
+# Hello world snippets
+snippet cchw
+	#include <iostream>
+
+	int main() {
+		std::cout << "${1:Hello world!}" << std::endl;
+	}
+
+# Framed comment
+snippet cfr
+	/*****************************************************************************
+	* ${1:Descriptive Comment}
+	*****************************************************************************/
